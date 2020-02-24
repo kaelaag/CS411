@@ -1,0 +1,10 @@
+As a new user, I want to create a profile, so that I can log into the application. 
+Acceptance requirement:
+When opening the application, options are ‘login’ or ‘create a new account’, when clicking on ‘create a new account’, options are either sign in through fitbit or sign in through email which then brings you to a new page.
+Sign in through fitbit:
+  Fitbit handles username and password
+Create an account using email: 
+  Create a username
+    If username is taken: give the user a warning
+  Create a password with a minimum of 6 chars
+After creating a profile, there may be a ‘remember me’ option for users so they don’t have to sign in every time.
