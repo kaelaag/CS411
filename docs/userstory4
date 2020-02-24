@@ -1,0 +1,9 @@
+As a logged in user, I want to log foods I have in my fridge, so that i can find a recipe that will maintain/improve my health goal.
+Acceptance criteria: 
+Select foods that you have in the fridge by checking off ingredients in filter search on a single page.
+  Select grains 
+  Select protein 
+  Select sauces 
+  Select Veggies/fruits
+  Select Dairy
+After checking boxes- do a search with ingredients with api
