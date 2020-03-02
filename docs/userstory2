@@ -1,0 +1,7 @@
+As a previous user, I want to log into the application so that I can find recipes.
+Acceptance requirements: 
+Input email and password
+If email doesn’t exist: message will pop up underneath and say “username doesn’t exist”
+If password and username don’t match: message will pop up underneath and say “username and password don’t match”
+Fitbit sign in doesn’t work: let fitbit handle it
+If user forgets password: tell them to enter email to reset password

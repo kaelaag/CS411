@@ -1,0 +1,6 @@
+As a logged in user, I want to provide all necessary information about myself and health goals, so that I can create a new health profile on the application.
+Acceptance criteria: 
+Connect with fitbit profile (request for the user to agree to share information, set for specific amount of time to share information)
+If using email then enter in (activity level, weight, location, sleep, nutrition, height) 
+Dietary restrictions(allergies, etc.)
+Calorie goal(how much does the user want to consume)

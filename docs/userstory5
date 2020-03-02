@@ -1,0 +1,8 @@
+As a logged in user, I want to find a recipe based on my diet and on the items in my fridge, so that I can improve or maintain my health goals.
+Acceptance Criteria: 
+pick recipes based on either time, difficulty, calories(based on remaining calories left for the day)
+5 recipes will show up for results
+User can click show more (5 more results will come up)
+Have a page for ‘saved for later’ recipes
+Have a page for ‘cooked’, users can rate the recipes that they cooked
+
