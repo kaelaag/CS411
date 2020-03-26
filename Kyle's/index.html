@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" type="text/css" href="apiTest1.css">
+</head>
+<body>
+    <h1>Recipe Search by Ingredients </h1>
+    <div class="topnav">
+        
+    </div>
+<p id="one">
+    Search: <input type="text" id="searchtext" value="Search..">
+    <button onClick="searchCall()" id="search">Search Recipes</button>
+</p>
+    
+    <script>
+        function searchCall() {
+            let x = document.getElementById("searchText").value;
+            alert(x);
+            const apiKey = '53af852e7fec48008d78fca38997fbbb';
+            jQuery.get('https://api.spoonacular.com/recipes/random?apiKey=53af852e7fec48008d78fca38997fbbb') 
+    }    
+    </script>
+    
+    <script src="C:\Users\musta\Documents\GitHub\repo\411Practice\call.js"></script>
+</body>
+</html>
