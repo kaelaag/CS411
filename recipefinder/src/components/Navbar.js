@@ -1,11 +1,10 @@
 import React from 'react'
-import logo from '../logo.svg'
+import logo from '../logo.png'
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand ml-5" href="#">
-            <img src ={logo} alt = "logo" style = {{width: '35px '}}></img>
-            Recipe finder
+            <img src ={logo} alt = "logo" style = {{height: '35px '}}></img>
             </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span>
