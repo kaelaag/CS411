@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './img/logo.svg';
+import logo from '../../img/logo.svg';
 import './Landing.scss';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import image from './img/veggies.gif'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import image from '../../img/veggies.gif';
 function App() {
   return (
   <div>

@@ -1,5 +1,6 @@
-import React from 'react'
-import logo from '../logo.png'
+import React from 'react';
+import logo from '../../img/logo.png';
+import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,14 +15,18 @@ function Navbar() {
 
           </span>
         </button>
-      
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link mr-2" href="#">Log in&nbsp;<i class="fas fa-sign-in-alt"></i><span class="sr-only">(current)</span></a>
+              <a className="nav-link mr-2" href="/login">Log in&nbsp;<i class="fas fa-sign-in-alt"></i><span class="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign up</button>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <Link to="/register">
+                Sign up
+                </Link>
+              </button>
             </li>
           </ul>
         </div>

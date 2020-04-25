@@ -17,6 +17,7 @@ import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Layout from "./components/dashboard/Layout";
 import NotFound from "./components/404/404";
+import LandingPage from "./components/landing/LandingPage";
 
 // Style
 
@@ -53,7 +54,8 @@ class App extends Component {
         <Router>
           <div className="App">
             <Switch>
-              <Route exact path="/" component={Login} />
+              <Route exact path="/" component={LandingPage} />
+              <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <PrivateRoute exact path="/dashboard" component={Layout} />
               <Route

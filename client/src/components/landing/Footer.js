@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 function Footer() {
     return (
         <div>
             <FooterContainer className = "main-footer">
-               <div className = "footer-middle">    
+               <div className = "footer-middle">
                 <div className= "container">
                 <div className="row">
                 {/*Col 1 */}
@@ -39,7 +39,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                
+
                 </div>
                             {/* Footer Bottom */}
                     <div className = "footer-bottom">
@@ -48,11 +48,11 @@ function Footer() {
                     </p>
                     </div>
             </div>
-          </FooterContainer> 
+          </FooterContainer>
         </div>
     )
 }
-export default Footer; 
+export default Footer;
 
 const FooterContainer = styled.footer`
 .footer-middle {
