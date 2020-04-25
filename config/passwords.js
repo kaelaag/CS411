@@ -1,3 +1,3 @@
 module.exports = {
-    mongoPass: "iristech"
+    mongoPass: "chiragiscool"
 }
