@@ -106,6 +106,17 @@ class Login extends Component {
               Login
             </button>
           </div>
+
+          <div>
+            <hr className="hr-text" data-content="OR"/>
+          </div>
+
+          <div className="auth-button pt-2">
+            <Link to="/fitbit" className="bttn">
+                Sign in using FitBit
+            </Link>
+          </div>
+
           <div className="bottom-group">
             <Link to="/register" className="link">
               Sign up

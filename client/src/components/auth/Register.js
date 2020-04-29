@@ -106,7 +106,7 @@ class Register extends Component {
             </button>
           </div>
           <div className="bottom-group">
-            <Link to="/" className="link">
+            <Link to="/login" className="link">
               Sign in
             </Link>
           </div>

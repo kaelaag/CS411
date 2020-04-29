@@ -57,6 +57,7 @@ class App extends Component {
               <Route exact path="/" component={LandingPage} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
+              <Route exact path="/fitbit" />
               <PrivateRoute exact path="/dashboard" component={Layout} />
               <Route
                 component={localStorage.jwtTokenTeams ? Layout : NotFound}

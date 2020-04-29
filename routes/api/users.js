@@ -107,5 +107,9 @@ router.post("/login", (req, res) => {
   });
 });
 
+//router.post("/fitbit", passport.authenticate('fitbit', {
+  //scope: ["profile", "activity", "weight", "nutrition"]
+//}));
+
 
 module.exports = router;
