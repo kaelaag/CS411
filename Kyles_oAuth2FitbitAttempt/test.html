@@ -1,0 +1,17 @@
+<form method="post" enctype="multipart/form-data">
+    <!-- with no 'action = "/upload" ' defined, submission with be to the url that its on-->
+    <input type="file" name="photo" />
+    <input type="text" name="op" />
+    <input type="text" name="featured" />
+    <button>Upload Post</button>
+</form>
+
+<body>
+    <button onclick="redirFB()">Sign-in with Fitbit!</button>
+
+    <script>
+        function redirFB() {
+            location.replace("https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=22BQDB&redirect_uri=https://localhost%2Ffitbit_auth&scope=activity%20nutrition%20nutrition%20profile")
+        }
+    </script>
+</body>
