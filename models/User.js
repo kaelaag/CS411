@@ -21,4 +21,16 @@ const UserSchema = new Schema({
   }
 });
 
+UserSchema.set('toObject', {
+	transform: function (doc, ret, options)  {
+		let returnJson = {
+			_id: ret._id,
+			email: ret.email,
+			name: ret.name,
+			date: ret.date
+		}
+		return returnJson;
+	}
+});
+
 module.exports = User = mongoose.model("users", UserSchema);

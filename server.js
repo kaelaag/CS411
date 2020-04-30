@@ -3,8 +3,10 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const path = require("path");
+require('dotenv').config();
 
 const users = require("./routes/api/users");
+const recipes = require("./routes/api/recipes")
 
 const app = express();
 
@@ -38,6 +40,7 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
+app.use('api/recipes', recipes);
 
 
 // Serve static assets (build folder) if in production

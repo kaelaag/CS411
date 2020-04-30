@@ -1,7 +1,7 @@
 {
-  "name": "teams",
+  "name": "RecipeFinder",
   "version": "1.0.0",
-  "description": "Project Management for Teams",
+  "description": "Search Engine for Recipes",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
