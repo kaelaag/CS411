@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import calorie from '../calories.svg'
+import calorie from '../../img/calories.svg'
 
 function Recipes() {
     return (
         <RecipeContainer div class="container">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="media">
                     <img src ={calorie} alt = "calorie" style = {{height: '50px '}}></img>
                         <div class="media-body">
@@ -36,13 +36,13 @@ function Recipes() {
                     <hr/>
 
                 </div>
-            
+
         <div class="container">
             <div class="row">
-                
+
                 <div class="col">
                     {/* Search bar */}
-                    <div className = "Recipes-new">    
+                    <div className = "Recipes-new">
                         <div className= "container">
                           <div class="list-group list-group-flush">
                             <li class="list-group-item"> Search result</li>
@@ -73,11 +73,11 @@ function Recipes() {
                                 </div><button type="button" class="btn btn-outline-success">Add to favorites</button> </div> </strong></a>
                           </div>
                         </div>
-                    </div>                     
+                    </div>
                     </div>
                  </div>
-         </div>   
-    </div> 
+         </div>
+    </div>
 
     {/* Pagination */}
 
@@ -100,7 +100,7 @@ function Recipes() {
 </RecipeContainer>
     )
 }
-export default Recipes; 
+export default Recipes;
 
 const RecipeContainer = styled.section`
     padding-top: 50px;

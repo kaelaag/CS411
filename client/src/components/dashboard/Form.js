@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import avatar from '../avatar1.jpg';
+import avatar from '../../img/avatar1.jpg';
 
 function Form() {
   return (
@@ -14,7 +14,7 @@ function Form() {
     </nav>
 
     <div class="media">
-          <img src ={avatar} class = "align-self-center mr-3" alt = "avatar" style = {{height: '60px '}}></img>        
+          <img src ={avatar} class = "align-self-center mr-3" alt = "avatar" style = {{height: '60px '}}></img>
           <div class="media-body">
             <h5 class="mt-0">Edit profile</h5>
             <p>Keeping your information updated ensures you stay on track of your health goals.</p>
@@ -74,7 +74,7 @@ function Form() {
         </form>
         <hr/>
 
-        
+
         <form>
           {/* Weight needs validation */}
         <div class="form-group row">
@@ -95,7 +95,7 @@ function Form() {
           </small>
           </div>
         </div>
-        
+
         <fieldset class="form-group">
           <div class="row">
             <legend class="col-form-label col-sm-2 pt-0">Activity level</legend>

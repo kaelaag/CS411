@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../logo.png'
-import avatar from '../avatar1.jpg'
+import logo from '../../img/logo.png'
+import avatar from '../../img/avatar1.jpg'
 function Dnavbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,7 +24,7 @@ function Dnavbar() {
             {/* Profile dropdown */}
             <div class="btn-group">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                <img src ={avatar} alt = "avatar" style = {{height: '40px '}}></img>        
+                <img src ={avatar} alt = "avatar" style = {{height: '40px '}}></img>
               </button>
               <div class="dropdown-menu dropdown-menu-lg-right">
                 <button class="dropdown-item" type="button">Edit profile</button>
@@ -37,5 +37,3 @@ function Dnavbar() {
     );
 }
 export default Dnavbar;
-
-

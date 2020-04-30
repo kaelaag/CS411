@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import calorie from '../calories.svg'
+import calorie from '../../img/calories.svg'
 function Favorites() {
     return (
       <FavsContainer div class="container">
       <div class="container">
           <div class="row">
-              
+
               <div class="media">
               <img src ={calorie} alt = "calorie" style = {{height: '50px '}}></img>
                   <div class="media-body">
@@ -21,11 +21,11 @@ function Favorites() {
        </div>
        <hr/>
 
-      
+
   <div class="container">
       <div class="row">
           <div class="col">
-              <div className = "Recipes-new">    
+              <div className = "Recipes-new">
                   <div className= "container">
                     <div class="list-group list-group-flush">
                       <li class="list-group-item"> Favorites</li>
@@ -56,11 +56,11 @@ function Favorites() {
                           </div><button type="button" class="btn btn-outline-success">Add to favorites</button> </div> </strong></a>
                     </div>
                   </div>
-              </div>                     
+              </div>
               </div>
            </div>
-   </div>   
-</div> 
+   </div>
+</div>
 
 {/* Pagination */}
 
@@ -83,7 +83,7 @@ function Favorites() {
 </FavsContainer>
     )
 }
-export default Favorites; 
+export default Favorites;
 
 
 const FavsContainer = styled.section`
