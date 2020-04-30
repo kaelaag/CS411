@@ -1,0 +1,15 @@
+<html>
+<body>
+
+<h2>Sign-in with Fitbit!</h2>
+
+<button onclick="redirFB()">Sign-in with Fitbit!</button>
+
+<script>
+function redirFB() {
+  location.replace("https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=22BQDB&redirect_uri=http://localhost/callback%2Ffitbit_auth&scope=activity%20nutrition%20nutrition%20profile")
+}
+</script>
+
+</body>
+</html> 
