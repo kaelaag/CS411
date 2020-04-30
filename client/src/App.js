@@ -20,10 +20,13 @@ import NotFound from "./components/404/404";
 import LandingPage from "./components/landing/LandingPage";
 import Favorite from "./components/dashboard/Favorites";
 import Edit from "./components/dashboard/Form";
+import Recipes from "./Components/Recipes";
+import Saved from "./Components/Saved";
+
+// axios
+import axios from "axios";
 
 // Style
-
-
 import "./App.scss";
 
 // Check for token to keep user logged in
@@ -50,7 +53,62 @@ if (localStorage.jwtTokenTeams) {
 }
 
 class App extends Component {
+   constructor(props) {
+    super(props);
+    this.state = {
+      user: null,
+      recipes: {},
+      queryStr: "",
+      savedRecipes: {},
+      calorieGoal: 0
+    };
+    this.fetchRecipes = this.fetchRecipes.bind(this);
+    this.updateRecipes = this.updateRecipes.bind(this);
+    this.saveRecipe = this.saveRecipe.bind(this);
+  }
+
+  fetchRecipes(qryStr) {
+    axios
+    .post("/recipes", {
+      query: qryStr
+    })
+      .then(res => {
+        this.setState({
+          recipes: res.data.data.hits
+        });
+      })
+      .catch(err => console.log(err));
+  }
+
+  updateRecipes(cal) {
+    axios
+      .post("/recipes/update", {
+        query: this.state.queryStr,
+        calories: cal
+      })
+      .then(res => {
+        this.setState({
+          recipes: res.data.data.hits
+        });
+      })
+      .catch(err => console.log(err));
+  }
+
+  saveRecipe = recipeObj => {
+    axios
+    .post("/recipes/save", {
+      recipeId: recipeObj._id,
+      id: this.state.user._id,
+      name: recipeObj.label,
+      link: recipeObj.url,
+      image: recipeObj.image,
+    });
+  };
+  
+  
   render() {
+    let user = Object.assign({}, this.state.user);
+    
     return (
       <Provider store={store}>
         <Router>
@@ -63,6 +121,15 @@ class App extends Component {
               <Route exact path="/favorites" component={Favorite} />
               <Route exact path="/edit" component={Edit} />
               <PrivateRoute exact path="/dashboard" component={Layout} />
+              <Route exact path="/saved" render={() => <Saved user={this.state.user} />} />
+              <Route exact path="/recipes" render={() => (
+                <Recipes
+                  fetchRecipes = {this.fetchRecipes}
+                  updateRecipes={this.updateRecipes}
+                  recipes={this.state.recipes}
+                  saveRecipe={this.saveRecipe}
+                /> )}
+              />
               <Route
                 component={localStorage.jwtTokenTeams ? Layout : NotFound}
               />
