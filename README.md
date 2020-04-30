@@ -10,7 +10,7 @@ Kiril Gushterov
 
 Kaela Gobencion
 
-A Note from the developers: All components for the functionality of the search engine are written and included in the repository; however, due to the circumstances of COVID-19 we had trouble merged our individual work together before the deadline.
+A Note from the developers: All components for the functionality of the search engine are written and included in the repository; however, due to the circumstances of COVID-19 we had trouble merging our individual work together before the deadline.
 
 To run:
 
