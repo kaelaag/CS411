@@ -1,10 +1,11 @@
 import React from 'react'
 import logo from '../../img/logo.png'
 import avatar from '../../img/avatar1.jpg'
+
 function Dnavbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand ml-5" href="#">
+        <a className="navbar-brand ml-5" href="/dashboard">
             <img src ={logo} alt = "logo" style = {{height: '35px '}}></img>
             </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +18,7 @@ function Dnavbar() {
           <ul className="navbar-nav ml-auto">
           {/* Favorites page */}
           <li className="nav-item active">
-              <a className="nav-link mr-2" href="#">Favorites &nbsp;<i class="far fa-heart"></i><span class="sr-only">(current)</span></a>
+              <a className="nav-link mr-2" href="/favorites">Favorites &nbsp;<i class="far fa-heart"></i><span class="sr-only">(current)</span></a>
             </li>
 
 
@@ -27,7 +28,7 @@ function Dnavbar() {
                 <img src ={avatar} alt = "avatar" style = {{height: '40px '}}></img>
               </button>
               <div class="dropdown-menu dropdown-menu-lg-right">
-                <button class="dropdown-item" type="button">Edit profile</button>
+                <a href="/edit"><button class="dropdown-item" type="button">Edit profile</button></a>
                 <button class="dropdown-item" type="button">Sign out</button>
               </div>
             </div>

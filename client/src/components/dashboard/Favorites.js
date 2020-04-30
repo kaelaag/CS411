@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import calorie from '../../img/calories.svg'
+import Dnavbar from './Dnavbar'
+import Dfooter from './Dfooter'
 function Favorites() {
     return (
+      <div>
+      <Dnavbar/>
       <FavsContainer div class="container">
       <div class="container">
           <div class="row">
@@ -62,6 +66,7 @@ function Favorites() {
    </div>
 </div>
 
+
 {/* Pagination */}
 
 <PaginationA nav aria-label="...">
@@ -81,6 +86,8 @@ function Favorites() {
 </PaginationA>
 
 </FavsContainer>
+<Dfooter/>
+</div>
     )
 }
 export default Favorites;

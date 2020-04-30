@@ -8,7 +8,7 @@ function Form() {
 
       <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
         <li class="breadcrumb-item active" aria-current="page">Edit profile</li>
      </ol>
     </nav>
@@ -147,7 +147,7 @@ function Form() {
         <hr/>
         <div class="form-group row">
           <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Update Personal Information</button>
+            <a href="/dashboard"><button type="submit" class="btn btn-primary">Update Personal Information</button></a>
           </div>
         </div>
   </form>

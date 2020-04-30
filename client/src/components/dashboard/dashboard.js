@@ -14,8 +14,8 @@ function App() {
   <div>
     <Dnavbar/>
     {/* <Form/> */}
-    {/* <Recipes/> */}
-    <Favorites/>
+     <Recipes/>
+    {/* <Favorites/> */}
     {/* <NotFound/> */}
     <Dfooter/>
 

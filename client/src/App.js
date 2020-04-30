@@ -18,6 +18,8 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 import Layout from "./components/dashboard/dashboard";
 import NotFound from "./components/404/404";
 import LandingPage from "./components/landing/LandingPage";
+import Favorite from "./components/dashboard/Favorites";
+import Edit from "./components/dashboard/Form";
 
 // Style
 
@@ -58,6 +60,8 @@ class App extends Component {
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/fitbit" />
+              <Route exact path="/favorites" component={Favorite} />
+              <Route exact path="/edit" component={Edit} />
               <PrivateRoute exact path="/dashboard" component={Layout} />
               <Route
                 component={localStorage.jwtTokenTeams ? Layout : NotFound}
