@@ -1,0 +1,60 @@
+Return tarrget for client side Authentication (Fitbit sign in). Redirects to this page with the permissions key or a error(if permissions denied).
+Developer information: invalid_request - Invalid redirect_uri parameter value
+<script>
+    let code = '';
+    let calories = 600;
+    var qs = require("querystring");
+var http = require("https");
+
+var qs = require("querystring");
+var http = require("https");
+
+var options = {
+	"method": "POST",
+	"hostname": "fitbitapidimashirokovv1.p.rapidapi.com",
+	"port": null,
+	"path": "/getActivityGoals",
+	"headers": {
+		"x-rapidapi-host": "FitbitAPIdimashirokovV1.p.rapidapi.com",
+		"x-rapidapi-key": "54de98ee4amshd004bcbf5bd026ap125491jsn99e6cd252163",
+		"content-type": "application/x-www-form-urlencoded"
+	}
+};
+
+var req = http.request(options, function (res) {
+	var chunks = [];
+
+	res.on("data", function (chunk) {
+		chunks.push(chunk);
+	});
+
+	res.on("end", function () {
+		var body = Buffer.concat(chunks);
+		console.log(body.toString());
+	});
+});
+
+req.write(qs.stringify({}));
+req.end();
+//end 1
+ switch (floor(getHours()/8)) {
+    case 0:
+        calories = .35*cals;
+        break;
+
+    case 1:
+        calories = .25*cals;
+         break;
+
+    case 2:
+        calories=.4*cals;
+        break;
+
+    default:
+        calories = 600;
+    }
+</script>
+
+
+//GET https://api.fitbit.com/1/user/-/activities/caloriesBMR/date/2020-04-01.json
+Accept-Locale: en_US
